@@ -7,8 +7,7 @@ struct Beat_GERDApp: App {
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Symptom.self,
-            Treatment.self,
+            CorrelativeItem.self,
             CustomUserData.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)

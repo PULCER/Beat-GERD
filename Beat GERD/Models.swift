@@ -1,33 +1,25 @@
 import Foundation
 import SwiftData
 
-@Model
-final class Symptom {
-    var UUID: UUID
-    var timestamp: Date
-    var symptomDescription: String = ""
-    var isSymptomPresent: Bool = false
-    
-    init(UUID: UUID, timestamp: Date, symptomDescription: String, isSymptomPresent: Bool) {
-        self.UUID = UUID
-        self.timestamp = timestamp
-        self.symptomDescription = symptomDescription
-        self.isSymptomPresent = isSymptomPresent
-    }
+enum CorrelativeItemTypeEnum: String {
+    case symptom = "Symptom"
+    case treatment = "Treatment"
 }
 
 @Model
-final class Treatment {
+final class CorrelativeItem {
     var UUID: UUID
     var timestamp: Date
-    var treatmentDescription: String = ""
-    var isTreatmentPresent: Bool = false
+    var correlativeItemDescription: String = ""
+    var isPresent: Bool = false
+    var type: String = "Symptom"
     
-    init(UUID: UUID, timestamp: Date, treatmentDescription: String, isTreatmentPresent: Bool) {
+    init(UUID: UUID, timestamp: Date, correlativeItemDescription: String, isPresent: Bool, type: String) {
         self.UUID = UUID
         self.timestamp = timestamp
-        self.treatmentDescription = treatmentDescription
-        self.isTreatmentPresent = isTreatmentPresent
+        self.correlativeItemDescription = correlativeItemDescription
+        self.isPresent = isPresent
+        self.type = type
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437BB4EE2B93D9220034F606 /* AutoFocusedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4ED2B93D9220034F606 /* AutoFocusedTextField.swift */; };
 		43B3F36A2B93C4DC000C801D /* DisclaimerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3F3692B93C4DC000C801D /* DisclaimerModal.swift */; };
 		43E9105A2B93B83A00C84D46 /* Beat_GERDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E910592B93B83A00C84D46 /* Beat_GERDApp.swift */; };
 		43E9105C2B93B83A00C84D46 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9105B2B93B83A00C84D46 /* NavigationView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437BB4ED2B93D9220034F606 /* AutoFocusedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusedTextField.swift; sourceTree = "<group>"; };
 		43B3F3692B93C4DC000C801D /* DisclaimerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerModal.swift; sourceTree = "<group>"; };
 		43E910562B93B83A00C84D46 /* Beat GERD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beat GERD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E910592B93B83A00C84D46 /* Beat_GERDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat_GERDApp.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				43B3F3682B93C3C6000C801D /* NAV */,
 				43E9106D2B93BA6B00C84D46 /* HomeView.swift */,
 				43B3F3692B93C4DC000C801D /* DisclaimerModal.swift */,
+				437BB4ED2B93D9220034F606 /* AutoFocusedTextField.swift */,
 				43E9105D2B93B83A00C84D46 /* Models.swift */,
 				43E9105F2B93B83B00C84D46 /* Assets.xcassets */,
 				43E910612B93B83B00C84D46 /* Beat_GERD.entitlements */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437BB4EE2B93D9220034F606 /* AutoFocusedTextField.swift in Sources */,
 				43E9106C2B93B96000C84D46 /* NavigationViewModel.swift in Sources */,
 				43E9105C2B93B83A00C84D46 /* NavigationView.swift in Sources */,
 				43E9105E2B93B83A00C84D46 /* Models.swift in Sources */,
