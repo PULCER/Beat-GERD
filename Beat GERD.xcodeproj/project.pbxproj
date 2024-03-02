@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		43E9105A2B93B83A00C84D46 /* Beat_GERDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E910592B93B83A00C84D46 /* Beat_GERDApp.swift */; };
-		43E9105C2B93B83A00C84D46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9105B2B93B83A00C84D46 /* ContentView.swift */; };
+		43E9105C2B93B83A00C84D46 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9105B2B93B83A00C84D46 /* NavigationView.swift */; };
 		43E9105E2B93B83A00C84D46 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9105D2B93B83A00C84D46 /* Item.swift */; };
 		43E910602B93B83B00C84D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E9105F2B93B83B00C84D46 /* Assets.xcassets */; };
 		43E910642B93B83B00C84D46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E910632B93B83B00C84D46 /* Preview Assets.xcassets */; };
+		43E9106C2B93B96000C84D46 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9106B2B93B96000C84D46 /* NavigationViewModel.swift */; };
+		43E9106E2B93BA6B00C84D46 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9106D2B93BA6B00C84D46 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43E910562B93B83A00C84D46 /* Beat GERD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beat GERD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E910592B93B83A00C84D46 /* Beat_GERDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat_GERDApp.swift; sourceTree = "<group>"; };
-		43E9105B2B93B83A00C84D46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43E9105B2B93B83A00C84D46 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		43E9105D2B93B83A00C84D46 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		43E9105F2B93B83B00C84D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E910612B93B83B00C84D46 /* Beat_GERD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beat_GERD.entitlements; sourceTree = "<group>"; };
 		43E910632B93B83B00C84D46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43E910652B93B83B00C84D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E9106B2B93B96000C84D46 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		43E9106D2B93BA6B00C84D46 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				43E910592B93B83A00C84D46 /* Beat_GERDApp.swift */,
-				43E9105B2B93B83A00C84D46 /* ContentView.swift */,
+				43E9105B2B93B83A00C84D46 /* NavigationView.swift */,
+				43E9106D2B93BA6B00C84D46 /* HomeView.swift */,
+				43E9106B2B93B96000C84D46 /* NavigationViewModel.swift */,
 				43E9105D2B93B83A00C84D46 /* Item.swift */,
 				43E9105F2B93B83B00C84D46 /* Assets.xcassets */,
 				43E910612B93B83B00C84D46 /* Beat_GERD.entitlements */,
@@ -144,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E9105C2B93B83A00C84D46 /* ContentView.swift in Sources */,
+				43E9106C2B93B96000C84D46 /* NavigationViewModel.swift in Sources */,
+				43E9105C2B93B83A00C84D46 /* NavigationView.swift in Sources */,
 				43E9105E2B93B83A00C84D46 /* Item.swift in Sources */,
+				43E9106E2B93BA6B00C84D46 /* HomeView.swift in Sources */,
 				43E9105A2B93B83A00C84D46 /* Beat_GERDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

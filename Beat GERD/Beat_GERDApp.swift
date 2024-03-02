@@ -1,15 +1,11 @@
-//
-//  Beat_GERDApp.swift
-//  Beat GERD
-//
-//  Created by Anthony Howell on 3/2/24.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
 struct Beat_GERDApp: App {
+    
+    @StateObject var navigationViewModel = NavigationViewModel()
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +21,8 @@ struct Beat_GERDApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView()
+                .environmentObject(navigationViewModel)
         }
         .modelContainer(sharedModelContainer)
     }
