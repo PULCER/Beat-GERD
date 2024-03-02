@@ -7,6 +7,7 @@ struct NavigationView: View {
         switch navigationViewModel.currentScreen {
         case .home:
             HomeView()
+        case .
         }
     }
 }

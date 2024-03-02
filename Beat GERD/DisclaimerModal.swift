@@ -21,10 +21,10 @@ struct DisclaimerModalView: View {
             Button("Accept and Continue") {
                 onAccept()
             }
-            .font(.title2) // Make the text larger
+            .font(.title2)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 20) // Increase vertical padding
-            .padding(.horizontal) // Apply default horizontal padding if needed
+            .padding(.vertical, 20)
+            .padding(.horizontal) 
             .foregroundColor(.white)
             .background(Color.blue)
             .cornerRadius(10)

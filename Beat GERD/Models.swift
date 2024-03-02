@@ -12,14 +12,16 @@ final class CorrelativeItem {
     var timestamp: Date
     var correlativeItemDescription: String = ""
     var isPresent: Bool = false
-    var type: String = "Symptom"
+    var correlationType: String = "Symptom"
+    var isSubmitted: Bool = false
     
-    init(UUID: UUID, timestamp: Date, correlativeItemDescription: String, isPresent: Bool, type: String) {
+    init(UUID: UUID, timestamp: Date, correlativeItemDescription: String, isPresent: Bool, type: String, isSubmitted: Bool) {
         self.UUID = UUID
         self.timestamp = timestamp
         self.correlativeItemDescription = correlativeItemDescription
         self.isPresent = isPresent
-        self.type = type
+        self.correlationType = type
+        self.isSubmitted = isSubmitted
     }
 }
 
