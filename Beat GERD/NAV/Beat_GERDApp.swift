@@ -3,7 +3,6 @@ import SwiftData
 
 @main
 struct Beat_GERDApp: App {
-    
     @StateObject var navigationViewModel = NavigationViewModel()
     
     var sharedModelContainer: ModelContainer = {

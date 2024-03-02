@@ -33,9 +33,9 @@ final class Treatment {
 
 @Model
 final class CustomUserData {
-    var hasUserBeenShownWarningModal: Bool = false
+    var hasUserAcceptedDisclaimer: Bool = false
 
-    init(hasUserBeenShownWarningModal: Bool) {
-        self.hasUserBeenShownWarningModal = hasUserBeenShownWarningModal
+    init(hasUserAcceptedDisclaimer: Bool) {
+        self.hasUserAcceptedDisclaimer = hasUserAcceptedDisclaimer
     }
 }

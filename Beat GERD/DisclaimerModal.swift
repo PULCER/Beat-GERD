@@ -2,33 +2,37 @@ import SwiftUI
 
 struct DisclaimerModalView: View {
     @Environment(\.modelContext) private var modelContext
-    @Binding var isPresented: Bool
-    @Query private var CustomUser
+    var onAccept: () -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Important Disclaimer")
-                .font(.headline)
+                .font(.title)
+                .foregroundColor(.primary)
             
             Text("This app does not contain any medical advice. It is a habit tracking journal designed for informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment.")
-                .font(.body)
+                .font(.system(size: 20))
+                .foregroundColor(.secondary)
             
             Text("Consult Your Physician: Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.")
-                .font(.body)
+                   .font(.system(size: 20))
+                .foregroundColor(.secondary)
             
             Button("Accept and Continue") {
-                CustomUserData.hasUserBeenShownWarningModal.toggle()
+                onAccept()
             }
-            .padding()
+            .font(.title2) // Make the text larger
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 20) // Increase vertical padding
+            .padding(.horizontal) // Apply default horizontal padding if needed
             .foregroundColor(.white)
             .background(Color.blue)
             .cornerRadius(10)
+
         }
         .padding()
-        .background(Color.white)
+        .background(Color(UIColor.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 8)
     }
 }
-    
-
